@@ -21,7 +21,8 @@ int B[3][3] = {
     int colsA = (sizeof(A)/sizeof(int))/rowsA;
     int rowsB = sizeof(B)/sizeof(B[0]);
     int colsB = (sizeof(B)/sizeof(int))/rowsB;
-
+    
+//main logic 
     int resultant[10][10];
     for(int i=0;i<rowsA;i++){
         for(int j=0;j<colsB;j++){
@@ -31,6 +32,8 @@ int B[3][3] = {
             }
         }
     }
+//...
+
     printf("The resultant matrix is\n");
     for(int i=0;i<rowsA;i++){
         for(int j=0;j<colsB;j++){
