@@ -106,9 +106,9 @@ void transpose3D(){//transpose of a pxqxr matrix
     }
 
     int transpose[10][10][10];
-    for(int i=0;i<p;i++){
-        for(int j=0;j<r;j++){
-            for(int k=0;k<q;k++){
+    for(int i=0;i<p;i++){//main layer index as it is
+        for(int j=0;j<r;j++){//andar wale indices palat denge
+            for(int k=0;k<q;k++){//kyunki traspose ho raha hai
                 transpose[i][j][k] = mat[i][k][j];
             }
         }
